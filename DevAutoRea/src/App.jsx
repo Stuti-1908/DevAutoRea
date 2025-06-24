@@ -36,14 +36,14 @@ function App() {
 
       <hr />
 
-      <button id="settings_toggle" onClick={() => setShowSettings(s => !s)}>
+      <button id="settings-toggle" onClick={() => setShowSettings(s => !s)}>
         {showSettings ? 'Hide Settings' : 'Show Settings'}
       </button>
       {showSettings && (
-        <div id="settings_panel">
+        <div id="settings-panel">
           <h2>Settings</h2>
           <input
-            id="settings_input"
+            id="settings-input"
             type="text"
             placeholder="Settings input"
             value={settings}
