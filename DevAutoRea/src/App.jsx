@@ -11,7 +11,7 @@ function App() {
       <h1>Sample React App</h1>
       {/* Shared selector for cross-page scenario */}
       <input
-        id="shared_input"
+        id="shared-input"
         type="text"
         placeholder="Shared input on home"
         value={inputValue}
@@ -50,12 +50,12 @@ function App() {
             onChange={e => setSettings(e.target.value)}
           />
           <button
-            id="settings_save"
+            id="settings-save"
             onClick={() => setOutput(`Settings saved: ${settings}`)}
           >
             Save Settings
           </button>
-          <div id="settings_status">{settings && `Current: ${settings}`}</div>
+          <div id="settings-status">{settings && `Current: ${settings}`}</div>
         </div>
       )}
     </div>
