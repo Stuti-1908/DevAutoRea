@@ -150,7 +150,7 @@ function App() {
               }}
             />
             <button
-              id="settings_save"
+              id="settings-save"
               onClick={() => setOutput(`Settings saved: ${settings}`)}
               style={{
                 background: '#22c55e',
