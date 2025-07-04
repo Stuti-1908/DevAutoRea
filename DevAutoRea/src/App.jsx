@@ -163,7 +163,7 @@ function App() {
             >
               Save Settings
             </button>
-            <div id="settings_status" style={{
+            <div id="settings-status" style={{
               color: '#64748b',
               marginTop: 6
             }}>{settings && `Current: ${settings}`}</div>
