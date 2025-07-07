@@ -156,40 +156,45 @@ function App() {
             {showSettings ? 'Hide Settings' : 'Show Settings'}
           </button>
 
-          {showSettings && (
-            <>
-              <h2 style={{ color: '#2563eb', alignSelf: 'flex-start', margin: 0 }}>Settings</h2>
+          {/* Settings Panel - Always rendered but conditionally visible */}
+          <div 
+            id="settings-panel" 
+            style={{
+              display: showSettings ? 'block' : 'none',
+              width: '100%'
+            }}
+          >
+            <h2 style={{ color: '#2563eb', alignSelf: 'flex-start', margin: 0 }}>Settings</h2>
 
-              <input
-                id="settings-input"
-                type="text"
-                placeholder="Enter setting..."
-                value={settings}
-                onChange={e => setSettings(e.target.value)}
-                style={inputStyle}
-              />
+            <input
+              id="settings-input"
+              type="text"
+              placeholder="Enter setting..."
+              value={settings}
+              onChange={e => setSettings(e.target.value)}
+              style={inputStyle}
+            />
 
-              <button
-                id="settings-save"
-                onClick={() => setOutput(`Settings saved: ${settings}`)}
-                style={{
-                  ...buttonStyle,
-                  background: '#22c55e',
-                  color: '#fff'
-                }}
-              >
-                Save Settings
-              </button>
+            <button
+              id="settings-save"
+              onClick={() => setOutput(`Settings saved: ${settings}`)}
+              style={{
+                ...buttonStyle,
+                background: '#22c55e',
+                color: '#fff'
+              }}
+            >
+              Save Settings
+            </button>
 
-              <div id="settings-status" style={{
-                color: '#334155',
-                fontSize: 14,
-                alignSelf: 'flex-start'
-              }}>
-                {settings && `Current: ${settings}`}
-              </div>
-            </>
-          )}
+            <div id="settings-status" style={{
+              color: '#334155',
+              fontSize: 14,
+              alignSelf: 'flex-start'
+            }}>
+              {settings && `Current: ${settings}`}
+            </div>
+          </div>
         </div>
       </div>
     </div>
