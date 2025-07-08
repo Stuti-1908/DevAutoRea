@@ -187,7 +187,7 @@ function App() {
               Save Settings
             </button>
 
-            <div id="settings_status" style={{
+            <div id="settings-status" style={{
               color: '#334155',
               fontSize: 14,
               alignSelf: 'flex-start'
