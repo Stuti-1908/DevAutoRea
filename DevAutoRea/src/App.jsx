@@ -22,7 +22,7 @@ function App() {
   };
 
   const inputStyle = {
-    padding: '10px 14px',
+    padding: '10px 1px',
     borderRadius: 8,
     border: '1px solid #cbd5e1',
     background: '#f1f5f9',
@@ -127,7 +127,7 @@ function App() {
             }}>{output}</div>
           )}
 
-          {/* Copilot bot message */}
+          {/* message */}
           <div className="copilot-bot" style={{
             background: '#f1f5f9',
             borderRadius: 8,
